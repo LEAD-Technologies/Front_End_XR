@@ -586,7 +586,7 @@ body {
     width: 90%;
     align-items: center;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 .blog .container .posts .post_1{
     align-items: flex-end;
@@ -614,7 +614,6 @@ body {
 .blog .container .posts .post_1 .content p {
     /* width: 622px; */
     width: 95%;
-    height: 94px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -959,9 +958,6 @@ footer .container .social_links .list span {
         /* display: inline; */
     }
     .nav .nav_toggle img{
-        /* width: 30px;
-        height: 30px; */
-
         width: 100%;
         height: 100%;
     }
@@ -1095,6 +1091,9 @@ footer .container .social_links .list span {
     .offer .container .content img {
         width: 90%;
     }
+    .offer .container {
+        padding-bottom: 100px;
+    }
 
 
     /* store */
@@ -1152,6 +1151,7 @@ footer .container .social_links .list span {
     }
     .about .about_container {
         width: 85%;
+        gap: 6rem;
     }
     .about .about_container .title {
         width: 100%;
@@ -1189,7 +1189,7 @@ footer .container .social_links .list span {
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }
     .blog .container .bottom .btn {
-        width: 40%;
+        width: 56%;
     }
     .blog .container .bottom .subscribe {
         width: 90%;
@@ -1202,6 +1202,9 @@ footer .container .social_links .list span {
     }
     .blog .container .bottom .subscribe {
         gap: 20px;
+    }
+    .offer .container .content .text p {
+        font-size: 18px;
     }
 }
 
@@ -1218,6 +1221,22 @@ footer .container .social_links .list span {
     .about .about_container .title p {
         font-size: 18px;
     }
+    .blog .container .posts {
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+    }
+    .blog .container .posts .post_1 .content {
+        padding-left: 20px;
+    }
+    .blog .container .posts .post_2 .content {
+        padding-left: 20px;
+    }
+    .blog .container .posts .post_1 .content p {
+        width: 100%;
+    }
+    .blog .container .posts .post_2 .content p {
+        width: 100%;
+    }
+
 }
 @media only screen and (max-width: 439px) {
     .home .container {
@@ -1231,7 +1250,8 @@ footer .container .social_links .list span {
         line-height: 60px;
     }
     .about .about_container .angle_text p {
-        left: -85%;
+        /* left: -85%; */
+        left: -116% !important;
     }
     .offer .container .text {
         width: 100%;
@@ -1249,6 +1269,19 @@ footer .container .social_links .list span {
     }
     .blog .container .posts .post_1 .content {
         margin-bottom: 2rem;
+    }
+    .blog .container .posts .post_2 .content p {
+        width: 100%;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .blog .container .posts .post_2 .content p {
+        width: 100%;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .offer .container .content .text p {
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 410px) {
@@ -1271,6 +1304,9 @@ footer .container .social_links .list span {
     }
     .about .about_container .title {
         margin-bottom: 2rem;
+    }
+    .blog .container .bottom .subscribe {
+        gap: 5rem;
     }
     
 }
