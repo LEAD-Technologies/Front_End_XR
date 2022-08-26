@@ -23,6 +23,7 @@ body {
 }
 .nav {
     display: flex;
+    position: relative;
     width: calc(100% - 2rem);
     height: auto;
     justify-content: space-between;
