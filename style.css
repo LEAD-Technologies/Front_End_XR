@@ -27,7 +27,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 .nav {
@@ -125,7 +125,7 @@ body {
     max-width: 100%;
     padding: 12rem 0 0 0;
 }
-.home .container  .text {
+.home .container .text {
     width: 640px;
     font-family: 'Poppins';
     font-style: normal;
@@ -135,11 +135,12 @@ body {
     color: #FDF2CD;
     margin-top: 8rem;
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 200px;
     display: flex;
     flex-direction: column;
     gap: 80px;
+    z-index: 100;
 }
 .home .container .text button {
     border: 1px solid #F5C003;
@@ -162,6 +163,25 @@ body {
 .home .container .img img {
     width: 100%;
 }
+
+.home .container .img .img1 {
+    z-index: 10;
+}
+.home .container .img .img2 {
+    position: absolute;
+    width: 40%;
+    z-index: 0;
+    right: 2%;
+    top: 20rem;
+}
+.home .container .img .img3 {
+    position: absolute;
+    width: 18%;
+    z-index: 0;
+    right: 0px;
+    top: 15rem;
+}
+
 
 /* about */
 
@@ -355,8 +375,8 @@ body {
 .offer .container .content .text2 h2 {
     width: 278.87px;
     height: 60px;
-    left: 330px;
-    top: 3296px;
+    /* left: 330px;
+    top: 3296px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -482,13 +502,14 @@ body {
     font-size: 20px;
     line-height: 22px;
     color: #FFFFFF;
-    width: 253px;
-    height: 22px;
+    /* width: 253px; */
+    width: 100%;
+    /* height: 22px; */
 }
 .store .container .img .img_item .text .price {
     color: #AC1F1F;
-    width: 56px;
-    height: 18px;
+    /* width: 56px;
+    height: 18px; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -501,23 +522,23 @@ body {
     gap: 58px;
 }
 .store .container .img .img_item2 .text .price {
-    width: 124px;
-    height: 18px;   
+    /* width: 124px;
+    height: 18px;    */
 }
 .store .container .img .img_item3 .text {
     gap: 16px;
 }
 .store .container .img .img_item3 .text .price {
-    width: 124px;
-    height: 18px;
+    /* width: 124px;
+    height: 18px; */
     padding: 0;  
 }
 .store .container .img .img_item4 .text {
     gap: 12px;
 }
 .store .container .img .img_item4 .text .price {
-    width: 124px;
-    height: 18px;  
+    /* width: 124px;
+    height: 18px;   */
 }
 .store .container .img .img_item .text .verified {
     display: flex;
@@ -529,8 +550,9 @@ body {
     height: 29px;
 }
 .store .container .img .img_item .text .verified p {
-    width: 191px;
-    height: 24px;
+    /* width: 191px;
+    height: 24px; */
+    width: 100%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -559,7 +581,10 @@ body {
     align-self: center;
 }
 .store .container .btn p {
-    width: 129px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 24px;
     font-family: 'Inter';
     font-style: normal;
@@ -711,6 +736,7 @@ body {
     opacity: 0.3;
     margin-bottom: 26px;
     padding-left: 8px;
+    color: #CCCCCC;
 }
 .blog .container .bottom .subscribe input::placeholder {
     width: 198px;
@@ -953,7 +979,7 @@ footer .container .social_links .list span {
         gap: 2rem;
     }
     .nav .logo {
-        width: 127px;
+        width: 120px;
     }
     .nav .logo .nav-logo img {
         width: 80%;
@@ -986,7 +1012,7 @@ footer .container .social_links .list span {
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 40px;
+        top: 30px;
         right: 52px;
 
         width: 25px;
@@ -1085,6 +1111,7 @@ footer .container .social_links .list span {
     }
     .offer .container .content .text {
         padding-left: 0px;
+        gap: 3rem;
     }
     .offer .container .content .img_1 {
         order: 1;
@@ -1148,7 +1175,8 @@ footer .container .social_links .list span {
         flex-direction: column;
     }
     .home .container .text button {
-        width: 100px;
+        /* width: 100px; */
+        width: 125px;
         height: 40px;
         font-size: 16px;
         line-height: 18px;
@@ -1315,7 +1343,7 @@ footer .container .social_links .list span {
         text-align: center;
     }
     .store .container .text .para {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 60px;
     }
     .about .about_container .title {
@@ -1323,6 +1351,10 @@ footer .container .social_links .list span {
     }
     .blog .container .bottom .subscribe {
         gap: 5rem;
+    }
+    footer .last {
+        text-align: center;
+        font-size: 14px;
     }
     
 }
