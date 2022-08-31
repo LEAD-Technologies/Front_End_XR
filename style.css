@@ -19,6 +19,26 @@ html {
 body {
     font-size: 16px;
 }
+button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FDF2CD;
+    background: #AC1F1F;
+    border: 1px solid #AC1F1F;
+    padding: 10px;
+    transition: 0.2s all ease-in;
+}
+button:hover {
+    font-size: 18px;
+    color: #A38002;
+    padding: 10px;
+}
+.blog .container .bottom button {
+    width: 200px;
+}
 
 /* nav */
 
@@ -241,24 +261,10 @@ body {
     color: #220606;
 }
 .about .about_container .btn {
-    border: 1px solid #AC1F1F;
-    background: #AC1F1F;
-    width: 141px;
-    height: 53px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
-}
-.about .about_container .btn p{
-    color: #FDF2CD;
-    width: 111px;
-    height: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
 }
 .about .about_container .angle_text p {
     transform: rotate(90deg);
@@ -692,7 +698,7 @@ body {
     align-items: center;
     gap: 101px;
 }
-.blog .container .bottom .btn {
+/* .blog .container .bottom .btn {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -705,7 +711,7 @@ body {
     border: 1px solid #AC1F1F;
     padding: 10px;
     text-align: center;
-}
+} */
 .blog .container .bottom .subscribe {
     display: flex;
     flex-direction: column;
@@ -727,7 +733,8 @@ body {
     margin-bottom: 42px;
 }
 .blog .container .bottom .subscribe input {
-    width: 532px;
+    /* width: 532px; */
+    width: 100%;
     height: 66px;
     background: #AC1F1F;
     opacity: 0.3;
@@ -1088,10 +1095,10 @@ footer .container .social_links .list span {
         top: 2.6rem;
         left: -82%;
     }
-    .about .about_container .btn {
+    /* .about .about_container .btn {
         width: 120px;
         height: 40px;
-    }
+    } */
     .about .about_container .btn p {
         width: 110px;
         height: 20px;

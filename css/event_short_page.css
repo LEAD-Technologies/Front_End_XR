@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 16px;
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #390A0A;
+    /* width: 1024px; */
+    /* height: 700px; */
+}
+
+.greetings .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 115px;
+    padding-top: 105px;
+    text-align: center;
+}
+.greetings .container  h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+.greetings .container  p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F5C003;
+    padding: 24px 0px;
+}
+.greetings .container .para2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F5C003;
+    padding-bottom: 75px;
+}
+.greetings .container .details {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 64px;
+}
+input {
+    background: #CCCCCC;
+    opacity: 0.7;
+    width: 368px;
+    height: 57px;
+    padding: 10px;
+    color: #AC1F1F;
+}
+button {
+    background: #F5C003;
+    border: 1px solid #AC1F1F;
+    width: 378px;
+    height: 53px;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #AC1F1F;
+}
+
+@media only screen and (max-width: 439px)  {
+    .greetings .container {
+        /* text-align: center; */
+        width: 90%;
+    }
+    .greetings .container .details {
+        width: 90%;
+    }
+    input {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}

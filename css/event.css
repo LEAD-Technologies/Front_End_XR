@@ -1,0 +1,310 @@
+@font-face {
+    font-family: Inter;
+    src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 16px;
+    background: #1E1E1E;
+}
+
+/* aboutpage */
+
+.aboutpage {
+    padding-top: 160px;
+}
+.aboutpage .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+    gap: 50px;
+}
+.aboutpage .container .content {
+    /* padding-top: 200px; */
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutpage .container .content .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+.aboutpage .container .content p {
+    width: 377px;
+    height: 64px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.06em;
+    color: #CCA003;
+}
+.aboutpage .container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* event */
+.event .container {
+    display: grid;
+    place-items: center;
+    gap: 70px;
+    padding-bottom: 100px;
+}
+.event .container .event_title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+
+    color: #FFFFFF;
+}
+.event .container .event_title::before,
+.event .container .event_title::after {
+    content: '';
+    background-color: green;
+    width: 100px;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    top: -1rem;
+    margin: 0 20px;
+}
+
+.event .container .event_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+    grid-gap: 50px 30px;
+}
+.event .container .event_items .img {
+    width: 100%;
+    overflow: hidden;
+}
+.event .container .event_items .img .img_item {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+}
+.event .container .event_items .text {
+    padding-top: 30px;
+}
+.event .container .event_items .text .date {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-bottom: 2px;
+}
+.event .container .event_items .text h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 47px;
+    color: #A38002;
+    padding-bottom: 2px;
+}
+.event .container .event_items .text .desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #E3B4B4;
+    padding-bottom: 32px;
+}
+.event .container .event_items .text .slot {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+}
+.event .container .event_items .text button {
+    width: 370px;
+    max-width: 350px;
+    background: #F5C003;
+    border: 1px solid #AC1F1F;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #AC1F1F;
+    transition: 0.s all ease-in-out;
+}
+.event .container .event_items .text button:hover {
+    color: #A38002;
+    font-size: 18px;
+}
+.event .container .grab {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #E3B4B4;
+}
+
+
+/* event_items style starts*/
+.eventItem {
+    padding-top: 140px;
+    padding-bottom: 70px;
+}
+.eventItem .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eventItem .container .image {
+    display: flex;
+    justify-content: center;
+}
+.eventItem .container .image img {
+    width: 100%;
+}
+.eventItem .container .content h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+.eventItem .container .content h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 47px;
+    color: #A38002;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+.eventItem .container .content .learn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #E3B4B4;
+}
+.eventItem .container .content .date {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 10px 0px;
+}
+.eventItem .container .content .verify {
+    display: flex;
+    align-items: center;
+}
+.eventItem .container .content .verify p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.9344px;
+    line-height: 25px;
+    color: #13E90F;
+}
+.eventItem .container .content .great {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31.25px;
+    line-height: 47px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-bottom: 25px;
+}
+.eventItem .container .content .button_tag {
+    display: flex;
+    gap: 50px;
+}
+.eventItem .container .content .button_tag button {
+    width: 141px;
+}
+.eventItem .container .content .button {
+    display: flex;
+    gap: 50px;
+}
+.eventItem .container .content .button2 {
+    /* width: 370px;
+    max-width: 350px; */
+    background: #F5C003;
+    border: 1px solid #AC1F1F;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #AC1F1F;
+    transition: 0.s all ease-in-out;
+}
+.eventItem .container .content .button2:hover {
+    font-size: 18px;
+    color: #1E1E1E;
+}
+
+@media only screen and (max-width: 512px)  {
+    .eventItem .container .content h2 {
+        font-size: 40px;
+    }
+    .eventItem .container .content h3 {
+        font-size: 25px;
+    }
+    .eventItem .container .content .learn {
+        font-size: 18px;
+    }
+    .eventItem .container .content .great {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+/* event_items style end*/
+
+@media only screen and (max-width: 439px) {
+    .event .container .event_title::before, .event .container .event_title::after {
+        width: 50px;
+    } 
+}
+ 
