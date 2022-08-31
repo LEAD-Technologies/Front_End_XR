@@ -1,21 +1,4 @@
-@font-face {
-    font-family: Inter;
-    src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
-}
-@font-face {
-    font-family: Poppins;
-    src: url(font/Poppins/Poppins-Regular.ttf) format("truetype");
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-}
-html {
-    scroll-behavior: smooth;
-}
 body {
     font-size: 16px;
     background: #1E1E1E;
@@ -165,7 +148,11 @@ body {
     color: #AC1F1F;
     transition: 0.s all ease-in-out;
 }
-.event .container .event_items .text button:hover {
+.event .container .event_items .text a {
+    color: #AC1F1F;
+    transition: 0.s all ease-in-out;
+}
+.event .container .event_items .text a:hover {
     color: #A38002;
     font-size: 18px;
 }
@@ -195,6 +182,10 @@ body {
     justify-content: center;
 }
 .eventItem .container .image img {
+    width: 100%;
+}
+.eventItem .container .content{
+    position: relative;
     width: 100%;
 }
 .eventItem .container .content h2{
@@ -256,7 +247,8 @@ body {
 }
 .eventItem .container .content .button_tag {
     display: flex;
-    gap: 50px;
+    gap: 20px;
+    max-width: 400px;
 }
 .eventItem .container .content .button_tag button {
     width: 141px;
@@ -264,10 +256,15 @@ body {
 .eventItem .container .content .button {
     display: flex;
     gap: 50px;
+    width: 50%;
+    justify-content: center;
+    display: flex;
 }
 .eventItem .container .content .button2 {
-    /* width: 370px;
-    max-width: 350px; */
+    width: 50%;
+    max-width: 350px;
+    justify-content: center;
+    display: flex;
     background: #F5C003;
     border: 1px solid #AC1F1F;
     padding: 10px;
@@ -295,8 +292,8 @@ body {
         font-size: 18px;
     }
     .eventItem .container .content .great {
-        font-size: 28px;
-        line-height: 40px;
+        font-size: 25px;
+        line-height: 35px;
     }
 }
 
@@ -306,5 +303,27 @@ body {
     .event .container .event_title::before, .event .container .event_title::after {
         width: 50px;
     } 
+    .eventItem .container .content {
+        position: relative;
+        width: 100%;
+    }
+    .eventItem .container .content h3 {
+        line-height: 45px;
+        padding-bottom: 35px;
+    }
+    .eventItem .container .content .date {
+        padding: 15px 0px;
+    }
+    .eventItem .container .content .great {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .eventItem .container .content .button_tag {
+        max-width: 400px;
+    }
+    .eventItem .container .content .button2,
+    .eventItem .container .content .button {
+        width: 50%;
+    }
 }
  

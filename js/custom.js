@@ -78,11 +78,11 @@ class XrFooter extends HTMLElement {
                 <h3>Quicklinks</h3>
 
                 <ul class="list">
-                    <li><a href="#">About us</a></li>
+                    <li><a href="./about.html">About us</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="./event.html">Events</a></li>
                 </ul>
             </div>
 

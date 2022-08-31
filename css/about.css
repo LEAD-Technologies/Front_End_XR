@@ -1,0 +1,87 @@
+
+.about_page {
+    background: #1E1E1E;
+    padding-top: 160px;
+    padding-bottom: 96px;
+}
+.about_page .container .content {
+    background: url(../img/Subtract.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: contain;
+    position: relative;
+}
+.about_page .container .content .intro {
+    width: 60%;
+    position: relative;
+}
+.about_page .container .content .intro h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F7CB2D;
+}
+.about_page .container .content .intro h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+    width: 90%;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+.about_page .container .content .intro p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #CCCCCC;
+}
+
+
+.we_do{
+    background: url(../img/young-african-american-man-s-playing-vr-glasses-neon-light-gradient-background-male-portrait\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+}
+.we_do .container {
+    display: flex;
+    justify-content: flex-end;
+}
+.we_do .container .content{
+    width: 50%;
+}
+.we_do .container .content .text {
+    width: 100%;
+}
+.we_do .container .content .text .para1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #AC1F1F;
+}
+.we_do .container .content .text .para2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #731515;
+}

@@ -19,7 +19,6 @@ html {
 body {
     font-size: 16px;
 }
-
 .greetings {
     display: flex;
     align-items: center;
@@ -28,7 +27,6 @@ body {
     /* width: 1024px; */
     /* height: 700px; */
 }
-
 .greetings .container {
     display: flex;
     align-items: center;
@@ -78,7 +76,7 @@ input {
     padding: 10px;
     color: #AC1F1F;
 }
-button {
+a {
     background: #F5C003;
     border: 1px solid #AC1F1F;
     width: 378px;
@@ -90,6 +88,13 @@ button {
     font-size: 20px;
     line-height: 24px;
     color: #AC1F1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover {
+    font-size: 18px;
+    width: 300px;
 }
 
 @media only screen and (max-width: 439px)  {
