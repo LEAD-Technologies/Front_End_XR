@@ -91,7 +91,7 @@ class XrFooter extends HTMLElement {
 
                 <ul class="list">
                     <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
                     <li><a href="#">Shop</a></li>
                 </ul>
             </div>
