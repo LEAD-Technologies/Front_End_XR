@@ -46,8 +46,7 @@
     position: relative;
 }
 
-
-
+/* about */
 
 .about_page {
     background: #1E1E1E;
@@ -100,7 +99,6 @@
     color: #CCCCCC;
 }
 
-
 /* we_do */
 
 .we_do_page {
@@ -146,6 +144,7 @@
 }
 
 /* blog */
+
 .blog .container .title {
     max-width: 470px;
     text-align: center;
@@ -176,7 +175,6 @@
     line-height: 73px;
     color: #EED2D2;
 }
-
 
 
 /* @media only screen and (max-width: 1200px) {

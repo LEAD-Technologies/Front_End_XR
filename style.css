@@ -66,8 +66,25 @@ a {
 .blog .container .bottom button {
     width: 200px;
 }
+.btn3 {
+    background: #524001;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #808080;
+    padding: 10px;
+    width: 100%;
+}
+.btn3:hover {
+    font-size: 18px;
+    color: #F5C003;
+}
 
-/* make the common thing in offer and about like the butto above to prevent repeating of code */
+
+
 
 /* nav */
 
@@ -334,7 +351,8 @@ a {
     -webkit-text-stroke-color: #2B2B2B;
     font-size: 500px;
     top: 460px;
-    left: -650px;
+    /* left: -650px; */
+    left: -625px;
 }
 
 /* offer */
@@ -946,9 +964,178 @@ footer .container .social_links .list span {
     display: flex;
     justify-content: center;
     padding-bottom: 44.13px;
+    padding-top: 20px;
 }
 
+/* contact page */
 
+.changes {
+    max-width: 834px;
+    max-height: 508px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    height: 508px;
+}
+.changes .container {
+    background: #390A0A;
+    border: 1px solid #A38002;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.simple .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.simple p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    color: #F5C003;
+}
+
+/* contact */
+
+/* confirmation_Page */
+.confirmation {
+    background: #1E1E1E;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 16px;
+    padding-bottom: 645px;
+    padding-top: 266px;
+}
+.confirmation .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+/* confirmation_Page */
+
+/* forget_password_page */
+.password {
+    background: #1E1E1E;
+    padding: 266px 0px 336px 0px;
+}
+.password .simple {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+}
+.password .simple form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 48px;
+    justify-content: center;
+    align-items: center;
+}
+.password .simple form input {
+    width: 100%;
+    padding: 14px;
+}
+.password .simple a {
+    width: 100%;
+}
+/* forget_password_page */
+
+/* login */
+
+.login {
+    background: #1E1E1E;
+    padding-top: 155px;
+    padding-bottom: 50px;
+}
+.login .container {
+    display: grid;
+    gap: 3.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+}
+.login .container .title h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FDF2CD;
+}
+.login .container .content .a_btn3 {
+    padding: 44px 0px 80px 0px;
+}
+.login .container .form {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 368px;
+}
+.login .container .form input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #220606;
+    padding: 10px 10px 10px 30px;
+}
+.login .container .link1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #F5C003;
+}
+.login .container .link2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #F5C003;
+}
+.login .container .title {
+    padding-bottom: 95px;
+}
+.login .container .image {
+    max-width: 796px;
+}
+.login .container .image img {
+    width: 100%;
+}
+/* login */
+
+/* privacy */
+.privacy {
+    padding-top: 168px;
+    background: #1E1E1E;
+    color: #F5C003;
+}
+/* privacy */
 
 
 /* media query */
@@ -1029,6 +1216,12 @@ footer .container .social_links .list span {
         width: 100%;
     }
 }
+@media only screen and (max-width: 888px) {
+    .login .container .title h3 {
+        font-size: 42px;
+    }
+}
+
 @media only screen and (max-width: 825px) {
     .nav .nav-menu .nav_list {
         gap: 2rem;
@@ -1145,14 +1338,12 @@ footer .container .social_links .list span {
     .about .about_container .angle_text p{
         width: 1000px;
         height: 541.62px;
-        left: -632px;
         font-weight: 600;
-        font-size: 300px;
         line-height: 750px;
-        top: 29rem;
-        font-size: 340px;
-        top: 2.6rem;
-        left: -82%;
+        left: -81%;
+        -webkit-text-stroke-width: 3px;
+        font-size: 350px;
+        top: 2.5rem;
     }
     /* .about .about_container .btn {
         width: 120px;
@@ -1164,14 +1355,7 @@ footer .container .social_links .list span {
         text-align: center;
         font-size: 18px;
         line-height: 20px;
-    }
-    .about .about_container .angle_text p {
-        top: 3.5rem;
-        left: -82%;
-        -webkit-text-stroke-width: 3px;
-        font-size: 350px;
-        top: 2.5rem;
-    }
+    }  
 
     .home .container .img .img3 {
         width: 20%;
@@ -1231,6 +1415,27 @@ footer .container .social_links .list span {
     }
     .blog .container .posts {
         margin: 0 auto;
+    }
+
+    /* forget_password */
+    .simple .title {
+        font-size: 40px;
+        line-height: 60px;
+        padding-bottom: 20px;
+    }
+
+    /* login */
+    .login .container .title {
+        padding-bottom: 40px;
+    }
+    .login .container .content .a_btn3 {
+        padding: 20px 0px 30px 0px;
+    }
+    .login .container .title h3 {
+        font-size: 40px;
+    }
+    .login .container {
+        align-items: center;
     }
 
 
@@ -1336,6 +1541,23 @@ footer .container .social_links .list span {
 @media only screen and (max-width: 512px) {
     .about .about_container .title h2 {
         font-size: 35px;
+    }
+    .about .about_container .angle_text p {
+        left: -78%;
+        font-size: 250px;
+        letter-spacing: 60px;
+    }
+    .login .container .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .login .container .form {
+        width: 100%;
+    }
+    .login .container .image {
+        display: none;
     }
 }
 @media only screen and (max-width: 482px) {
