@@ -110,9 +110,14 @@
 
 .other {
     display: flex;
+    background: #1E1E1E;
 }
 .other .blog_img {
     position: relative;
+    max-width: 75%;
+}
+.other .blog_img img {
+    width: 100%;
 }
 .other .blog_img .text{
     position: absolute;
@@ -142,4 +147,26 @@
     font-size: 48.83px;
     line-height: 73px;
     color: #FFFFFF;
+}
+.other .text2 {
+    max-width: 20%;
+    position: relative;
+}
+.other .text2 .deg_para {
+    transform: rotate(90deg);
+    /* translate: 0% 0%; */
+    font-size: 200px;
+    width: 100%;
+    position: relative;
+    left: 8%;
+    translate: 0px -30px;
+    /* border: 2.3125px solid #F5C003;
+    background: #1E1E1E;
+    -webkit-text-stroke-width: 2.3125px; */
+    -webkit-text-stroke-color: #F5C003;
+    color: transparent;
+    font-family: 'Poppins';
+    font-weight: 600;
+    opacity: 0.3;
+    -webkit-text-stroke-width: 2px;
 }

@@ -1062,8 +1062,175 @@ footer .container .social_links .list span {
 }
 /* forget_password_page */
 
-/* login */
+/* sign-up page */
+.signup {
+    background: #1E1E1E;
+    padding-top: 282px;
+    padding-bottom: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup_container {
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.signup_container  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 48px;
+    color: #FFFFFF;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 200px;
+}
+.signup_container .item1 {
+    padding-bottom: 50px;
+}
+.signup_container .item1 .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 47px;
+    color: #FFFFFF;
+    padding-bottom: 38px;
+}
+.signup_container .item2 .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 31.25px; */
+    font-size: 25px;
+    line-height: 47px;
+    color: #FFFFFF;
+    padding-bottom: 51px;
+}
+.signup_container .form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.signup_container .form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.signup_container .form2 .btn1 {
+    width: 16px;
+    height: 12px;
+}
+.signup_container .form2 label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FDF2CD;
+}
+.signup_container .form2 label span {
+    color: #F5C003;
+}
+.signup_container .form1 .goggle {
+    background-image: url(./img/icon-google.png);
+}
+.signup_container .form1 .facebook {
+    background-image: url(./img/icon-facebook.png);
+    background-size: 18px
+}
+.signup_container .form1 input::placeholder {
+    display: flex;
+}
+.signup_container .form1 input,
+.signup_container .form2 input {
+    padding: 10px 10px 10px 30px;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position-x: 30px;
+    background-size: 16px;
+    background-position-y: 14px;
+}
+.signup_container .form1 input {
+    padding: 10px 10px 10px 30%;
+    background-position-x: 22.5%;
+}
+.signup-div {
+    width: 138px;
+    height: 53px;
+    display: flex;
+    background: #524001;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-div .login-btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #808080;
+}
+.login-btn:hover {
+    font-size: 18px;
+}
+.btn_container2 {
+    padding-bottom: 16px;
+}
+.sign_btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #524001;
+    background: #808080;
+    border: none;
+    padding: 10px;
+}
+.signup .a_link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #F5C003;
+    padding-top: 80px;
+    padding-bottom: 41px;
+}
 
+/* sign-up page */
+
+/* login-page */
+
+.signup-btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #524001;
+    background: #808080;
+    padding: 10px;
+    width: 145px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-btn:hover {
+    font-size: 18px;
+}
 .login {
     background: #1E1E1E;
     padding-top: 155px;
@@ -1074,7 +1241,8 @@ footer .container .social_links .list span {
     gap: 3.5rem;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
-.login .container .title h3 {
+.login .container .title h3,
+.sigup .container .title h2 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -1127,15 +1295,49 @@ footer .container .social_links .list span {
 .login .container .image img {
     width: 100%;
 }
-/* login */
 
-/* privacy */
-.privacy {
+/* login-page */
+
+/* privacy-page */
+.privacy, .terms {
     padding-top: 168px;
+    padding-bottom: 80px;
     background: #1E1E1E;
     color: #F5C003;
 }
-/* privacy */
+.privacy .container,
+.terms .container {
+    padding: 0px 10px;
+}
+.privacy .container h3,
+.terms .container h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+.privacy .container p {
+    padding-top: 31px;
+    padding-bottom: 59px;
+}
+.privacy .container  ol {
+    padding-left: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.terms .container .headings {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 31px;
+    padding-bottom: 25px;
+} 
+.terms .container .list {
+    padding-left: 20px;
+}
+/* privacy-page  */
 
 
 /* media query */
@@ -1237,6 +1439,12 @@ footer .container .social_links .list span {
         font-size: 16px;
     }
 }
+@media only screen and (max-width: 799px) {
+    .signup_container p {
+        padding-bottom: 20px;
+        /* padding-top: 80px; */
+    }
+}
 @media only screen and (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -1261,9 +1469,6 @@ footer .container .social_links .list span {
         position: relative;
         transition: .3s all ease-in-out;
     }
-    /* .nav_toggle {
-        display: inline;
-    } */
     .nav .nav_toggle img{
         width: 100%;
         height: 100%;
@@ -1271,7 +1476,6 @@ footer .container .social_links .list span {
     .nav .nav-menu .nav_list .nav_item .nav_link {
         font-size: 22px;
     }
-    /* .nav .nav-menu .nav_close, */
     .nav .nav_toggle {
         display: inline-flex;
         width: 30px;
@@ -1301,8 +1505,6 @@ footer .container .social_links .list span {
         line-height: 50px;
         left: 5%;
     }
-
-    /* about */
     .about {
         min-height: 1000px;
     }
@@ -1345,10 +1547,6 @@ footer .container .social_links .list span {
         font-size: 350px;
         top: 2.5rem;
     }
-    /* .about .about_container .btn {
-        width: 120px;
-        height: 40px;
-    } */
     .about .about_container .btn p {
         width: 110px;
         height: 20px;
@@ -1364,9 +1562,6 @@ footer .container .social_links .list span {
         width: 43%;
         top: 18rem;
     }
-
-    /* offer */
-
     .offer .container .content {
         display: flex;
         flex-direction: column;
@@ -1436,6 +1631,15 @@ footer .container .social_links .list span {
     }
     .login .container {
         align-items: center;
+    }
+    .signup {
+        padding-top: 250px;
+    }
+    .signup_container .item1 {
+        padding-bottom: 50px;
+    }
+    .signup_container p {
+        padding-bottom: 0px;
     }
 
 
@@ -1537,6 +1741,20 @@ footer .container .social_links .list span {
     .offer .container .content .text p {
         font-size: 18px;
     }
+    .terms .container h3 {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 551px) {
+    .signup_container {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+}
+@media only screen and (max-width: 549px) {
+    signup_container p {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 }
 @media only screen and (max-width: 512px) {
     .about .about_container .title h2 {
@@ -1558,6 +1776,9 @@ footer .container .social_links .list span {
     }
     .login .container .image {
         display: none;
+    }
+    .privacy .container h3 {
+        font-size: 45px;
     }
 }
 @media only screen and (max-width: 482px) {
@@ -1582,6 +1803,9 @@ footer .container .social_links .list span {
     }
     .blog .container .posts .post_2 .content p {
         width: 100%;
+    }
+    .terms .container h3 {
+        font-size: 34px;
     }
 
 }

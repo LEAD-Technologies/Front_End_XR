@@ -102,7 +102,7 @@
 /* we_do */
 
 .we_do_page {
-    height: 120vh;
+    /* height: 120vh; */
 }
 .we_do{
     background: url(../img/young-african-american-man-s-playing-vr-glasses-neon-light-gradient-background-male-portrait\ 1.png);
@@ -114,6 +114,8 @@
     justify-content: center;
     background-size: cover;
     position: relative;
+    padding-bottom: 40px;
+
 }
 .we_do .container {
     display: flex;
@@ -204,7 +206,8 @@
         justify-content: center;
     }
     .we_do .container .content {
-        padding-bottom: 10rem;
+        padding-bottom: 1rem;
+        padding-top: 5rem;
         width: 80%;
     }
     .blog_content {

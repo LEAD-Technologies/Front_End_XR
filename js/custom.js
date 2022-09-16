@@ -78,11 +78,11 @@ class XrFooter extends HTMLElement {
                 <h3>Quicklinks</h3>
 
                 <ul class="list">
-                    <li><a href="./about.html">About us</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="./event.html">Events</a></li>
+                    <li><a href="../about.html">About us</a></li>
+                    <li><a href="../terms_condition.html">Terms & Conditions</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../privacy_policy.html">Privacy policy</a></li>
+                    <li><a href="../event.html">Events</a></li>
                 </ul>
             </div>
 
@@ -168,6 +168,102 @@ class XrHeader_item extends HTMLElement {
 }
 
 customElements.define('xr-header_item', XrHeader_item)
+
+class XrHeader_item2 extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="l_header" id="header">
+        <!-- nav -->
+            <nav class="nav container">
+                <!-- nav logo -->
+                <div class="logo">
+                    <a href="#" class="nav-logo"><img src="./img/logo_NoBG-removebg-preview 1.png" alt="" srcset=""></a>
+                </div>
+                <!-- nav menu -->
+                <div class="nav-menu" id="nav-menu">
+
+                    <!-- nav close -->
+                    <div class="nav_close" id="nav_close">
+                        <img src="./icons/icons8-close (1).svg" alt="">
+                    </div>
+
+                    <!-- nav list -->
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="./index.html" class="nav_link active" >Home</a></li>
+                        <li class="nav_item"><a href="./about.html" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="./blog.html" class="nav_link">Blog</a></li>
+                        <li class="nav_item"><a href="./event.html" class="nav_link">Events</a></li>
+                        <li class="nav_item"><a href="#shop" class="nav_link">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu-other" id="nav-menu-other">
+                    <!-- nav list -->
+                    <a href="./signup.html" class="signup-btn nav_link">Sign-Up</a>
+                </div>
+
+                <!-- toggle btn -->
+                <div class="nav_toggle" id="nav_toggle">
+                    <!-- <i class="fa-light fa-bars"></i>
+                    <i class="fa fa-bars"></i> -->
+                    <img class="menu" src="./icons/Menu2.svg" alt="">
+                </div>
+            </nav>
+        </header>
+        `
+    }
+}
+
+customElements.define('xr-header_item2', XrHeader_item2)
+
+class XrHeader_item3 extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="l_header" id="header">
+        <!-- nav -->
+            <nav class="nav container">
+                <!-- nav logo -->
+                <div class="logo">
+                    <a href="#" class="nav-logo"><img src="./img/logo_NoBG-removebg-preview 1.png" alt="" srcset=""></a>
+                </div>
+                <!-- nav menu -->
+                <div class="nav-menu" id="nav-menu">
+
+                    <!-- nav close -->
+                    <div class="nav_close" id="nav_close">
+                        <img src="./icons/icons8-close (1).svg" alt="">
+                    </div>
+
+                    <!-- nav list -->
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="./index.html" class="nav_link active" >Home</a></li>
+                        <li class="nav_item"><a href="./about.html" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="./blog.html" class="nav_link">Blog</a></li>
+                        <li class="nav_item"><a href="./event.html" class="nav_link">Events</a></li>
+                        <li class="nav_item"><a href="#shop" class="nav_link">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu-other signup-div " id="nav-menu-other">
+                    <!-- nav list -->
+                    <a href="./login.html" class="login-btn nav_link">Log in</a>
+                </div>
+
+                <!-- toggle btn -->
+                <div class="nav_toggle" id="nav_toggle">
+                    <!-- <i class="fa-light fa-bars"></i>
+                    <i class="fa fa-bars"></i> -->
+                    <img class="menu" src="./icons/Menu2.svg" alt="">
+                </div>
+            </nav>
+        </header>
+        `
+    }
+}
+
+customElements.define('xr-header_item3', XrHeader_item3)
+
+
 
 class XrFooter_item extends HTMLElement {
     connectedCallback() {
