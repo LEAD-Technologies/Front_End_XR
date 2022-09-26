@@ -95,6 +95,7 @@ a {
     left: 0;
     z-index: 1000;
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    background-color: #1e1e1e;
 }
 .nav {
     display: flex;
@@ -162,14 +163,14 @@ a {
 
 /* active */
 .nav-active {
-    background-color: #1e1e1e;;
+    background-color: #1e1e1e;
     box-shadow: 5px -1px 12px -5px grey;
 }
 
 
 /* show */
 .show-menu {
-    /* display: inline-block; */
+    display: inline-block;
     left: 0px;
     position: relative;
 }
@@ -1450,6 +1451,7 @@ footer .container .social_links .list span {
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
+        background-color: #1e1e1e;
     }
     .nav .logo {
         width: 120px;
@@ -1640,6 +1642,9 @@ footer .container .social_links .list span {
     }
     .signup_container p {
         padding-bottom: 0px;
+    }
+    .show-menu {
+        left: 0px;
     }
 
 

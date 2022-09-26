@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.cart {
+    padding-top: 200px;
+    background: #1E1E1E;
+}
+.cart .container {
+    display: flex;
+    flex-direction: column;
+    gap: 146px;
+}
+.cart .line {
+    max-width: 752px;
+    width: 100%;
+    height: 1px;
+    background: green;
+    display: inline-block;
+}
+.cart h1 {
+    color: #FDF2CD;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39.06px;
+    line-height: 59px;
+}
+.cart .para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0803F5;
+    max-width: 532px;
+    width: 100%;
+}
+.cart p span {
+    color: #F50303;
+}
+.cart .msg {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 89px;
+    align-items: center;
+}
+.cart .msg h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48.83px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+.cart .msg p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F5C003;
+}

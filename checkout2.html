@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead XR_checkout_2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/checkout2.css">
+</head>
+<body>
+
+    <!--=============== HEADER ===============-->
+    <xr-header></xr-header>
+
+    <section class="chartout_2">
+        <div class="container">
+            <h1>Cart</h1>
+            <div class="content">
+                <div class="product_table">
+                    <table class="table">
+                        <tr class="row1">
+                            <th></th>
+                            <th class="heading">Product</th>
+                            <th class="heading">Price</th>
+                            <th class="heading">Quantity</th>
+                            <th class="heading">Subtotal</th>
+                        </tr>
+                        <tr class="row2">
+                            <th>
+                                <div class="image">
+                                    <img src="./img/product_hoodie.png" alt="" srcset="">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="details">
+                                    <h2>Lead Plain XR Shirt</h2>
+                                    <div class="features">
+                                        <div class="size">
+                                            <p class="item1">Sizes: </p>
+                                            <p class="item2">2XL</p>
+                                        </div>
+                                        <div class="color">
+                                            <p class="item1">Seam colors: </p>
+                                            <p class="item2">Automatically <br> matched todesign color</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th><p class="amount">$49.99</p></th>
+                            <th><input type="number" value="1" name="" id=""></th>
+                            <th><p class="amount">$71.99</p></th>
+                        </tr>
+                    </table>
+                    <div class="lastrow">
+                        <div class="coupon">
+                            <input type="text" name="" id="" placeholder="Enter Coupon">
+                            <button type="submit">Apply Coupon</button>
+                        </div>
+                        <button type="submit">Update cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="detail">
+                    <p class="shipping_detail">
+                        SHIPMENT DETAILS <br>
+                        Shipment 1 of 1 <br>
+                        Lead Plain XR Shirt <br>
+                        Delivered between Tuesday 19 Jul and Thursday 21 Jul <br>
+                        Door delivery to default address <br>
+                    </p>
+                    <div class="image">
+                        <h3>Payment method</h3>
+                        <div class="img">
+                            <img class="img1" src="./img/mastercard_logo.png" alt="" srcset="">
+                            <img class="img2" src="./img/visa_logo_png.png" alt="" srcset="">
+                            <img class="img3" src="./img/elegro_logo_png.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <form action="">
+                        <h3>Please input any Crypto recieving address of your choice</h3>
+                        <div class="items">
+                            <div class="inputBox">
+                                <p>Bitcoin</p>
+                                <input type="text" placeholder="Input BTC address  *" required>
+                            </div>
+                            <div class="inputBox">
+                                <p>Ethereum</p>
+                                <input type="text" placeholder="Input ETH address  *" required>
+                            </div>
+                        </div>
+    
+                        <button type="submit">Done</button>
+                    </form>
+                </div>
+                <div class="cart_details">
+                    <h3>Cart totals</h3>
+                    <table>
+                        <tr>
+                            <td class="title">Subtotal</td>
+                            <td class="price">$49.99 - $10.00 (Coupon waiver)</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Delivery</td>
+                            <td class="price">$15.99</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Handling Fee</td>
+                            <td class="price">$2.99</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Tax</td>
+                            <td class="price">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Total</td>
+                            <td class="price">$58.98</td>
+                        </tr>
+                    </table>
+                    <button type="submit">Confirm Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <xr-footer></xr-footer>
+
+    <script src="./js/custom.js"></script>
+    <script src="./script.js"></script>
+</body>
