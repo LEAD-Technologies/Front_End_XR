@@ -1,111 +1,546 @@
-* {
-    margin: 0;padding: 0;
-    box-sizing: border-box;
-    outline: none;border: none;
-    text-transform: capitalize;
-    transition:  all .2s linear;
-}
+/* checkout 1 */
+.title1::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #A38002;
+    display: inline-block;
 
-.checkout .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    min-height: 100vh;
-    background: #1E1E1E;
-    padding-bottom: 70px;
 }
-.checkout .container form {
-    padding: 20px;
-    max-width: 834px;
+.title1 h1 {
+    max-width: 90%;
+    margin: 0 auto;
     width: 100%;
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
-    background: #390A0A;
-    border: 1px solid #A38002;
+    padding-bottom: 45px;
 }
-.checkout .container form h1 {
-    font-family: 'Inter';
+.chartout_1 .note {
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
-    color: #F5C003;
-}
-.checkout .container form .items {
+    line-height: 30px;
     display: flex;
+    align-items: center;
+    color: #A20C0C;
+    padding-bottom: 65px;
+}
+.chartout_1 {
+    background-color: #1E1E1E;
+    padding-bottom: 80px;
+}
+.billing {
+    width: 100%;
+}
+.billing form {
+    width: 100%;
+    display: flex;
+    column-gap: 38px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
 }
-.checkout .container form .items .inputBox {
-    max-width: 368px;
-    width: 100%;
+.billing form .details {
     display: flex;
-    flex-direction: column;
-    gap: 17px;
-}
-.checkout .container form .items .inputBox input {
     width: 100%;
-    padding-left: 30px;
-    padding-top: 16.5px;
-    padding-bottom: 16.5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 38px;
+}
+.billing form .detail {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+.billing h2 {
+    color: #FDF2CD;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39.06px;
+    line-height: 59px;
+    padding-bottom: 24px;
+}
+.billing .inputBox {
+    padding-bottom: 16px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+.billing input {
     background: #CCCCCC;
     opacity: 0.7;
+    max-width: 368px;
+    height: 57px;
+    padding: 16.5px 30px;
 }
-.checkout .container form .items .inputBox::placeholder{
+.billing textarea {
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 100%;
+}
+.create {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    align-self: flex-start;
+    width: 100%;
+}
+.create p {
+    color: #F5C003;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+}
+.billing_info div{
+    display: flex;
+    column-gap: 21px;
+    align-items: center;
+    padding: 0px 20px 0px 41.5px;
+    flex-wrap: wrap;
+}
+.billing_detail table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.billing_detail table .heading {
+    background: #220606;
+    border: 1px solid #000000;
+    text-align: left;
+    height: 86px;
+}
+.billing_detail table .heading th {
+    padding-left: 21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.06em;
+    color: #FCEAAB;
+}
+.billing_detail table tbody {
+    background: #390A0A;
+}
+.billing_detail .product {
+    padding-left: 21px;
+    border-right: 1px solid #220606;
+    padding-right: 15px;
+}
+.billing_detail .product .product_detail {
+    display: flex;
+    align-items: center;
+    column-gap: 68px;
+    flex-wrap: wrap;
+}
+.billing_detail .product .product_detail .para1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FCEAAB;
+}
+.billing_detail .product .product_detail .para2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 128.5%;
+    letter-spacing: -0.06em;
+    color: #FCEAAB;
+}
+.billing_detail .product,
+.billing_detail .billing_info {
+    width: 50%;
+    padding-top: 20px;
+}
+.billing_detail .billing_info .title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 170px;
+}
+.billing_detail .billing_info .price {
+    color: rgba(253, 242, 205, 0.5);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 112%;
+}
+.billing_detail .billing_info .coupon{
+    padding-left: 191px;
+}
+.elegro .title {
+    padding-top: 33px;
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
+.elegro .title p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FDF2CD;
+}
+.elegro .click {
+    display: flex;
+    padding-bottom: 64px;
+    padding-top: 40px;
+}
+.elegro .click p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FDF2CD;
+    padding-left: 8px;
+}
+.lines {
+    width: 100%;
+    display: inline-block;
+    opacity: 0.5;
+    border: 1px solid #F5C003;
+}
+.policy_note {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 79px;
+}
+.policy_note a {
+    color: #F5C003;
+}
+.last_item .link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.last_item .link a {
+    background: #8F1A1A;
+    max-width: 406px;
+    height: 53px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last_item .link a button {
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F8D557;
+}
+.last_item .link a button:hover {
+    font-size: 18px;
+}
+
+/* checkout 1 */
+
+
+/* checkout2 style */
+
+.title1,
+.chartout_2 {
+    padding-top: 196px;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+.chartout_2 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.chartout_2 h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39.06px;
+    line-height: 59px;
+    max-width: 90%;
+    margin: auto;
+}
+.chartout_2 span{
+    /* content: ""; */
+    width: 100%;
+    height: 2px;
+    background-color: #A38002;
+    display: inline-block;
+}
+.chartout_2 .container .content {
+    padding-top: 32px;
+}
+
+.chartout_2 .container .content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.chartout_2 .container .content table th {
+    background: #220606;
+    width: 1280px;
+    height: 95px;
+    font-size: 15px;
+    padding: 0px 5px;
+}
+.chartout_2 .container .content table tr {
+    background: #390A0A;
+    border: 1px solid #000000;
+}
+.chartout_2 .container .content .item_info {
+    width: 50%;
+}
+.chartout_2 .container .content td {
+    padding-top: 98px;
+    width: 10%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.chartout_2 .container .content td input {
+    max-width: 128px;
+    height: 48px;
+    width: 100%;
+}
+.chartout_2 .container .content .cart_info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 84px;
+}
+.chartout_2 .container .content .cart_info img {
+    width: 100%;
+    max-width: 277px;
+}
+.chartout_2 .container .content .cart_info h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 47px;
+    color: #FDF2CD;
+}
+
+.chartout_2 .container .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.chartout_2 .container .content .cart_info p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FAE081;
+    width: 50%;
+}
+.chartout_2 .container .content .coupon {
+    background: #220606;
+    border: 1px solid #000000;
+    padding-right: 28px;
+    padding-left: 85px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    align-items: center;
+    row-gap: 20px;
+    /* justify-content: center; */
+}
+.chartout_2 .container .content .coupon .apply {
+    display: flex;
+    max-width: 503px;
+    width: 100%;
+    column-gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+}
+.chartout_2 .container .content .coupon .apply input {
+    max-width: 320px;
+    width: 100%;
+    height: 64px;
+    background: #D9D9D9;
+    opacity: 0.7;
+    padding: 24px 12px 25px 12px;
+    border: none;
+}
+.chartout_2 .container .content .coupon .apply input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
     color: #220606;
     opacity: 0.7;
 }
-.checkout .container form .items .inputBox p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #F5C003;
-}
-.checkout .container form .submit-btn {
+.chartout_2 .container .content .coupon .btn {
+    background: #F5C003;
+    border: 1px solid #AC1F1F;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #8F1A1A;
-    max-width: 167px;
-    margin-left: 39px;
-    padding: 14.5px 59.5px;
-    background: #F5C003;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
+    width: 167px;
+    height: 53px;
 }
-.checkout .container form .submit-btn:hover {
-    font-size: 18px;
+.btn2 {
+    margin-left: 10px;
+    opacity: 0.3;
 }
-
-@media only screen and (max-width: 850px) {
-    .checkout .container form .items {
-        justify-content: center;
-    }
+.chartout_2 .container .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    padding-top: 33px;
 }
-
-
-/* paynow page style */
-.paynow {
-    padding-top: 196px;
-    background: #1E1E1E;
+.chartout_2 .container .cart1 {
+    display: grid;
+    justify-content: flex-end;
 }
-.paynow .container {
+.chartout_2 .container .card .detail {
+    max-width: 543px;
+    width: 100%;
+    padding-top: 66px;
+}
+.chartout_2 .container .card .cart_details {
+    max-width: 600px;
+    width: 100%;
+}
+.chartout_2 .container .card .cart_details table {
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
+    padding-right: 30px;
 }
-.paynow h1 {
+.chartout_2 .container .card .image {
+    max-width: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 25px;
+}
+.chartout_2 .card .image .img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 14px;
+    justify-content: space-around;
+}
+.chartout_2 .card .image .img .img1 {
+    width: 52px;
+    height: 46.52px;
+}
+.chartout_2 .card .image .img .img2 {
+    width: 90px;
+    height: 75px;
+}
+.chartout_2 .card .image .img .img3 {
+    width: 160px;
+    height: 63px;
+}
+
+
+.chartout_2 .card .detail p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 225.5%;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.chartout_2 .card .detail .shipping_detail {
+    font-weight: 600;
+    opacity: 1;
+}
+.chartout_2 .card .detail form {
+    background: #CCA003;
+    max-width: 543px;
+    width: 100%;
+    padding: 19px 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.chartout_2 .card .detail form h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #220606;
+}
+.chartout_2 .card .detail form .items {
+    padding-bottom: 32px;
+}
+.chartout_2 .card .detail form .items p {
+    color: #561010;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.chartout_2 .card .detail form .items input {
+    background: #CCCCCC;
+    opacity: 0.7;
+    max-width: 432px;
+    width: 100%;
+    height: 63px;
+    padding: 10px;
+    border: none;
+}
+.chartout_2 .card .detail form .items,
+.chartout_2 .card .detail form .items .inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.chartout_2 .card .detail form button {
+    color: #F5C003;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    background: #220606;
+    padding: 10px;
+    border: none;
+}
+.chartout_2 .card .detail form button:hover {
+    font-size: 18px;
+    cursor: pointer;
+}
+.cart_details {
     color: #FFFFFF;
     font-family: 'Poppins';
     font-style: normal;
@@ -113,87 +548,89 @@
     font-size: 39.06px;
     line-height: 59px;
 }
-.paynow span {
-    background: #A38002;
-    height: 1px;
-    width: 100%;
-    margin-top: 45px;
-    margin-bottom: 32px;
-}
-.paynow .card_details .item1 {
-    padding: 31px 80px 32px 80px;
-}
-.paynow .card_details .item1 h3,
-.paynow .card_details .item2 h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 32px;
-    letter-spacing: -0.06em;
+.cart_details h3 {
     color: #FFFFFF;
-}
-.paynow .card_details .total {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 128.5%;
-    letter-spacing: -0.06em;
-    color: #FFFFFF;
-}
-.paynow .card_details .item1,
-.paynow .card_details .item2 {
-    row-gap: 30px;
-    flex-wrap: wrap;
-    column-gap: 70px;
-    display: flex;
-    background: #220606;
-    border: 1px solid #000000;
-    justify-content: space-between;
-}
-.paynow .card_details .item2 {
-    padding: 32px 80px 31px 80px;
-}
-.paynow .card_details .item3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 128.5%;
-    letter-spacing: -0.06em;
-    color: #FFFFFF;
-    padding: 41px 80px;
+    font-size: 39.06px;
+    line-height: 59px;
+}
+.cart_details table {
     background: #390A0A;
+}
+.cart_details table .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 140px;
+    width: 100%;
+    color: #F5C003;
+    opacity: 0.5;
+}
+.cart_details table .price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(245, 192, 3, 0.5);
+}
+.cart_details table tr {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    padding-left: 20px;
+    width: 100%;
+    gap: 82px;
 }
-.paynow .card_details .item3 img {
-    width: 87px;
-    height: 69.25px;
-}
-.paynow .container  button {
+.cart_details button {
+    background: #F5C003;
+    border: 1px solid #AC1F1F;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #8F1A1A;
-    background: #F5C003;
-    align-self: center;
-    margin: 44px 83px;
+    padding: 14.5px 0px;
     width: 100%;
-    height: 53px;
-    max-width: 676px;
-    transition: 0.2s all ease-in-out;
 }
-.paynow .container button:hover {
-    height: 50px;
-    max-width: 400px;
+.cart_details button:hover {
     font-size: 18px;
+    cursor: pointer;
 }
+/* checkout2 style */
 
-/* paynow page style */
 
 
+
+@media only screen and (max-width: 1206px) {
+    .cart_info {
+        justify-content: center;
+        gap: 54px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .chartout_2 .container .content .coupon {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 753px) {
+    .billing_detail .billing_info .coupon {
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 400px) {
+    .billing input {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .elegro .title {
+        column-gap: 0px;
+    }
+}

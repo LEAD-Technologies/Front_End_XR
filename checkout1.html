@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead XR_checkout_1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+
+    <!--=============== HEADER ===============-->
+    <xr-header></xr-header>
+
+    <section class="title1">
+        <h1>Checkout</h1>
+    </section>
+    <section class="chartout_1">
+        <div class="container">
+            <div class="content">
+                <p class="note">Please Note: LeadXR ships most items in multiple packages, 
+                    from different warehouses. Don't be alarmed if you get just one item. 
+                    The rest of your order is on the way, we promise. No returns or exchanges. 
+                    Due to the customized nature of our products, 
+                    we only accept returns for damaged or defective merchandize.
+                </p>
+                <div class="billing">
+                    <form action="">
+                        <div class="details">
+                            <div class="detail">
+                                <h2>Billing details</h2>
+                                <div class="inputBox">
+                                    <input type="text" placeholder="First name  *" required>
+                                    <input type="text" placeholder="Last name  *" required>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" placeholder="Country/Region  *" required>
+                                    <input type="text" placeholder="Phone Number  *" required>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" placeholder="Street address  *" required>
+                                    <input type="text" placeholder="Company" required>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" placeholder="Town/City  *" required>
+                                    <input type="text" placeholder="State/Country  *" required>
+                                </div>
+                                <div class="inputBox">
+                                    <input type="text" placeholder="Postal/Zip Code  *" required>
+                                    <input type="email" placeholder="Email address  *" required>
+                                </div>
+                            </div>
+                            <div class="add_info">
+                                <h2>Additional information</h2>
+                                <textarea name="" id="" cols="28" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="create">
+                            <input type="checkbox" name="" id="">
+                            <p>Create account? </p>
+                        </div>
+                    </form>
+                    <div class="billing_detail">
+                        <h2>Billing details</h2>
+                        <table>
+                            <thead>
+                                <tr class="heading">
+                                    <th>Product</th>
+                                    <th>Billing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product">
+                                        <div class="product_detail">
+                                            <p class="para1">Lead Plain XR Shirt</p>
+                                            <p class="para2">X1</p>
+                                        </div>
+                                    </td>
+                                    <td class="billing_info">
+                                        <!-- <div class="bill_detail"> -->
+                                            <div>
+                                                <p></p>
+                                                <p class="price coupon">$49.99 - $10.00 (Coupon waiver)</p>
+                                            </div>
+                                            <div>
+                                                <p class="title">Delivery Fee</p>
+                                                <p class="price">$15.99</p>
+                                            </div>
+                                            <div>
+                                                <p class="title">Handling Fee</p>
+                                                <p class="price">$2.99</p>
+                                            </div>
+                                            <div>
+                                                <p class="title">Total</p>
+                                                <p class="price">$58.98</p>
+                                            </div>
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="elegro">
+                    <div class="title">
+                        <p>elegro Crypto Payment</p>
+                        <img src="./img/elegro_logo_png.png" alt="" srcset="">
+                    </div>
+                    <div class="click">
+                        <input type="checkbox" name="" id="">
+                        <p>Pay through the elegro Crypto Payment</p>
+                    </div>
+                </div>
+                <div class="last_item">
+                    <span class="lines"></span>
+                    <p class="policy_note">Your personal data will be used to process your order, support your experience throughout this website, 
+                        and for other purposes described in our <a href="http://">privacy policy</a>
+                    </p>
+                    <div class="link">
+                        <a class="btn" href="http://"><button type="submit">Place Order</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <xr-footer></xr-footer>
+
+    <script src="./js/custom.js"></script>
+    <script src="./script.js"></script>
+</body>
